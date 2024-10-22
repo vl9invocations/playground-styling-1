@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-name">
+        <h1>Best <span class="logo-highlight">ToDo</span> App</h1>
+      </div>
+      <nav>
+        <a aria-label="facebook" href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a aria-label="twitter" href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a aria-label="linkedin" href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="tasks-menu__edit">
+        <h2>Edit Task</h2>
+        <form action="">
+          <div class="cell">
+            <label for="task-id">Task ID</label>
+            <input name="task-id" id="task-id" class="info" value="123456789" />
+          </div>
+
+          <div class="cell">
+            <label for="input-text">Name</label>
+            <input
+              name="input-text"
+              id="input-text"
+              type="text"
+              value="Take out trashes"
+            />
+          </div>
+
+          <div class="cell">
+            <label for="completed"><p>Completed</p></label>
+            <input type="checkbox" name="completed" id="completed" />
+          </div>
+
+          <button type="button">Edit</button>
+          <span>There Was An Error</span>
+        </form>
+      </section>
+
+      <a href="index.html">
+        <div class="dark-button">
+          <p>Back To Tasks</p>
+        </div>
+      </a>
+    </main>
+  </body>
+</html>

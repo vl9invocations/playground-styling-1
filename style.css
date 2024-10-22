@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: hsl(210, 40%, 98%);
+  color: hsl(230, 39%, 12%);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+main > a {
+  margin: 50px 0 0;
+  align-self: center;
+}
+main > a > .dark-button {
+  width: 250px;
+  background-color: hsl(0, 0%, 13%);
+  color: hsl(0, 0%, 100%);
+  padding: 10px 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+header {
+  margin: 0 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px 55px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 5px hsla(0, 0%, 75%, 0.75);
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+h1 span {
+  color: hsl(245, 93%, 66%);
+}
+
+header > nav {
+  display: flex;
+  gap: 15px;
+}
+
+header > nav > a {
+  color: hsl(245, 93%, 66%);
+}
+
+.tasks-menu,
+.tasks-menu__edit,
+.task {
+  margin: 0 auto;
+  max-width: 750px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tasks-menu,
+.tasks-menu__edit {
+  max-width: 750px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px 55px;
+  box-shadow: 0 2px 5px hsl(0, 0%, 75%);
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.tasks-menu h2,
+.tasks-menu__edit h2 {
+  margin-bottom: 25px;
+}
+.tasks-menu form,
+.tasks-menu__edit form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tasks-menu span,
+.tasks-menu__edit span {
+  margin: 10px 0 0;
+  align-self: flex-start;
+  color: hsl(359, 56%, 38%);
+  font-size: 0.85rem;
+}
+
+.tasks-menu__edit {
+  text-align: center;
+}
+.tasks-menu__edit form {
+  flex-direction: column;
+}
+.tasks-menu__edit form .cell {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.tasks-menu__edit label {
+  flex: 2;
+  display: inline;
+  text-align: left;
+}
+.tasks-menu__edit input {
+  flex: 4;
+}
+.tasks-menu__edit input.info {
+  background-color: inherit;
+  border: 0;
+}
+.tasks-menu__edit span {
+  margin: 20px 0 0;
+  align-self: normal;
+}
+.tasks-menu__edit button {
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  border: 1px solid hsl(245, 3%, 66%);
+  border-radius: 5px 0 0 5px;
+  padding: 8px;
+  flex: 1;
+  font-size: 1.2rem;
+  background-color: hsl(210, 40%, 98%);
+  border: 1px solid hsl(216, 31%, 94%);
+}
+
+button {
+  background-color: hsl(245, 93%, 66%);
+  color: hsl(0, 0%, 100%);
+  padding: 7px 55px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 2px hsl(0, 0%, 89%);
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.task {
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 15px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 5px hsl(0, 0%, 75%);
+  padding: 25px 65px;
+}
+.task.high {
+  box-shadow: 0 10px 20px hsla(0, 0%, 75%, 0.75);
+}
+.task nav {
+  display: flex;
+  gap: 15px;
+}
+.task nav #edit {
+  color: hsl(120, 100%, 20%);
+}
+.task nav #delete {
+  color: hsl(0, 100%, 27%);
+}
+
+.done > h3 {
+  text-decoration: line-through;
+}
+
+.task-icon {
+  position: absolute;
+  left: 25px;
+  color: hsl(120, 100%, 18%);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+.tasks-menu,
+.tasks-menu__edit,
+.task {
+  margin: 0 auto;
+  max-width: 750px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tasks-menu,
+.tasks-menu__edit {
+  max-width: 750px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 25px 55px;
+  box-shadow: 0 2px 5px hsla(0, 0, 75%, 1);
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  span {
+    margin: 10px 0 0;
+    align-self: flex-start;
+    color: hsl(359, 56%, 38%);
+    font-size: 0.85rem;
+  }
+}
+
+.tasks-menu__edit {
+  form {
+    flex-direction: column;
+    .cell {
+      display: flex;
+      flex-direction: row;
+      //   gap: 10px;
+      margin: 10px 0;
+    }
+  }
+  text-align: center;
+
+  label {
+    flex: 2;
+    display: inline;
+    text-align: left;
+  }
+  input {
+    flex: 4;
+
+    &.info {
+      background-color: inherit;
+      border: 0;
+    }
+  }
+
+  span {
+    margin: 20px 0 0;
+    align-self: normal;
+  }
+
+  button {
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+input {
+  border: 1px solid hsl(245, 3%, 66%);
+  border-radius: 5px 0 0 5px;
+  padding: 8px;
+  flex: 1;
+  font-size: 1.2rem;
+  background-color: hsl(210, 40%, 98%);
+  border: 1px solid hsl(216, 31%, 94%);
+}
+
+button {
+  background-color: hsl(245, 93%, 66%);
+  color: hsl(0, 0%, 100%);
+  padding: 7px 55px;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 2px hsla(0, 0%, 89%, 1);
+  border: 0;
+  font-size: 1.2rem;
+}
+
+.task {
+  margin: 20px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  gap: 15px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 2px 5px hsla(0, 0, 75%, 1);
+  padding: 25px 65px;
+
+  &.high {
+    box-shadow: 0 10px 20px hsla(0, 0, 75%, 0.75);
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+
+    #edit {
+      color: hsl(120, 100%, 20%);
+    }
+    #delete {
+      color: hsl(0, 100%, 27%);
+    }
+  }
+}
+
+.done > h3 {
+  text-decoration: line-through;
+}
+
+.task-icon {
+  position: absolute;
+  left: 25px;
+  color: hsl(120, 100%, 18%);
+  top: 50%;
+  transform: translateY(-50%);
+}

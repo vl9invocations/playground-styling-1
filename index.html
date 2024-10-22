@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-name">
+        <h1>Best <span class="logo-highlight">ToDo</span> App</h1>
+      </div>
+      <nav>
+        <a aria-label="facebook" href="#">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a aria-label="twitter" href="#">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a aria-label="linkedin" href="#">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <section class="tasks-menu">
+        <h2>Your Tasks</h2>
+        <form>
+          <input
+            type="text"
+            id="task-input"
+            placeholder="e.g. wash dishes"
+            class="tasks-menu__add"
+            disabled
+          />
+          <button type="button">
+            <p>Add</p>
+          </button>
+        </form>
+        <span>There Was An Error</span>
+      </section>
+      <section class="tasks-list">
+        <div class="task high">
+          <h3>Take Out Trashes</h3>
+          <nav>
+            <a href="#" id="edit">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a href="#" id="delete">
+              <i class="fa-solid fa-trash"></i>
+            </a>
+          </nav>
+        </div>
+        <div class="task done">
+          <i class="task-icon fa-regular fa-circle-check"></i>
+          <h3>Walk The Dog</h3>
+          <nav>
+            <a href="#" id="edit">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a href="#" id="delete">
+              <i class="fa-solid fa-trash"></i>
+            </a>
+          </nav>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

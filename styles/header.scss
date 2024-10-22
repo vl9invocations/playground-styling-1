@@ -1,0 +1,26 @@
+header {
+  margin: 0 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 35px 55px;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 5px hsla(0, 0%, 75%, 0.75);
+}
+
+h1 {
+  font-size: 1.75rem;
+  span {
+    color: hsl(245, 93%, 66%);
+  }
+}
+
+header > nav {
+  display: flex;
+  gap: 15px;
+}
+
+header > nav > a {
+  color: hsl(245, 93%, 66%);
+}
