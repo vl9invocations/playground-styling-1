@@ -50,8 +50,14 @@
 
   label {
     flex: 2;
-    display: inline;
-    text-align: left;
+    display: flex;
+    align-items: center;
+
+    &.info {
+      &:focus-visible {
+        border: 0px;
+      }
+    }
   }
   input {
     flex: 4;

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -113,8 +114,11 @@ header > nav > a {
 }
 .tasks-menu__edit label {
   flex: 2;
-  display: inline;
-  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.tasks-menu__edit label.info:focus-visible {
+  border: 0px;
 }
 .tasks-menu__edit input {
   flex: 4;

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   //   border: 1px dashed orange;
 }
@@ -17,7 +18,6 @@ body {
 a {
   text-decoration: none;
 }
-
 main {
   display: flex;
   flex-direction: column;
